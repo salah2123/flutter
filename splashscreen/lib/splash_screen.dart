@@ -12,7 +12,7 @@ class _SplashScreenState extends State<SplashScreen>{
   @override
   void initState(){
     super.initState();
-    Timer(Duration(seconds: 5),(){
+    Timer(Duration(seconds: 3),(){
 
       Navigator.pushReplacement(
         context,
@@ -30,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen>{
     return Scaffold(
       body: Container(
         color: Colors.blue,
-        child:Center(child: Text('Classico',style: TextStyle(
+        child:Center(child: Text('Claico',style: TextStyle(
           fontSize: 34,
           fontWeight: FontWeight.w700,
           color: Colors.white

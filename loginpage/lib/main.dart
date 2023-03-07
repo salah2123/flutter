@@ -27,7 +27,8 @@ class MyWidget extends StatelessWidget {
               radius: 66,
               backgroundColor: Colors.black,
             
-           child: CircleAvatar(
+           child: 
+           CircleAvatar(
               backgroundImage: AssetImage("assets/images/cat.JPG"),
               radius: 65,
               

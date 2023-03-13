@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 
@@ -12,58 +14,53 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.white,
-        appBar: AppBar(
-          title: const Center(
-            child: (Text("ETLAB")),
+          backgroundColor: Colors.white,
+          appBar: AppBar(
+            title: const Center(
+              child: (Text("ETLAB")),
+            ),
           ),
-        ),
-        body: Container(
-          height: 200,
-          width: 1000,
-          decoration: const BoxDecoration(
-            color: Color.fromARGB(255, 59, 209, 254),
-          ),
-          child: Row(
-            children:[
-              SizedBox(
-                width: 19,
-              ),
-            CircleAvatar(
-            backgroundColor: Colors.black,
-            radius: 90,
-            child: CircleAvatar(
-              backgroundImage: AssetImage("assets/images/cat.JPG"),
-              radius: 89,
-            ),
-           // alignment:Alignment.bottomCenter,
-            ),
-            SizedBox(
-              width: 10,
-            ),
+          body:
+          //  SafeArea(
+          //   child: 
             Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                SizedBox(
-                  height: 60,
-                ),
-              Text("mohammed salah nk",
-              style: TextStyle(
-              fontWeight:FontWeight.bold,
-              fontSize: 16,
-              fontStyle: FontStyle.italic),
-              ),
-              Text("computer science",
-              style: TextStyle(
-              fontWeight:FontWeight.bold,
-              fontSize: 16,
-              fontStyle: FontStyle.italic),
-              ),
-
-            ],)
-            ],
-        ),
-      ),
-    ),);
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Container(
+                    height: 180,
+                    
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 83, 173, 252),
+                    ),
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      child: CircleAvatar(
+                        backgroundImage: AssetImage(
+                          "assets/images/cat.JPG",
+                        ),
+                        radius: 75,
+                      ),
+                    ),
+                  ),
+                  
+                  Container(
+                    
+                    height: 50,
+                    child: Container(
+                      width: 10,
+                      color: Color.fromARGB(255, 191, 157, 56),
+                      child: Text(
+                        'salah'
+                      ),
+                    ),
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 149, 203, 247),
+                      borderRadius: BorderRadius.all(Radius.circular(15)),
+                    ),
+                    
+                  )
+                ]),
+          ));
+    
   }
 }

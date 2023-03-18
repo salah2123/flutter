@@ -1,4 +1,4 @@
-import 'dart:html';
+//import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
@@ -29,6 +29,7 @@ class MyWidget extends StatelessWidget {
                   Container(
                     height: 180,
                     
+                    
                     decoration: BoxDecoration(
                       color: Color.fromARGB(255, 83, 173, 252),
                     ),
@@ -41,22 +42,32 @@ class MyWidget extends StatelessWidget {
                         radius: 75,
                       ),
                     ),
+                    
                   ),
                   
                   Container(
                     
                     height: 50,
                     child: Container(
-                      width: 10,
-                      color: Color.fromARGB(255, 191, 157, 56),
+                      width: 100,
+                     // color: Color.fromARGB(255, 191, 157, 56),
                       child: Text(
-                        'salah'
+                        'M      T     W     T     F     S     S',
+                        textAlign:TextAlign.center,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30,
+                        
+                        ),
                       ),
                     ),
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 149, 203, 247),
+                      color: Color.fromARGB(255, 109, 198, 243),
                       borderRadius: BorderRadius.all(Radius.circular(15)),
                     ),
+                    
+                  ),
+                  Container(
                     
                   )
                 ]),

@@ -1,5 +1,7 @@
+import 'package:bookstore/donate.dart';
 import 'package:bookstore/login.dart';
 import 'package:bookstore/signup.dart';
+import 'package:bookstore/two.dart';
 import 'package:flutter/material.dart';
 
 
@@ -34,7 +36,7 @@ class Homepage extends StatelessWidget {
                   fontSize: 30
                 ),),
                 SizedBox(height:20 ,),
-                Text("Automatic identify verification ",
+                Text("kochu kochu happiness ",
                 textAlign: TextAlign.center,
                 style: TextStyle( 
                   color: Colors.grey,
@@ -89,7 +91,7 @@ class Homepage extends StatelessWidget {
                   onPressed: () {
                      Navigator.push(context, MaterialPageRoute(builder:(context)=>SignupPage()));
                   },
-                  color: Colors.green,
+                  color: Color.fromARGB(255, 93, 155, 255),
                   elevation: 10,
                   shape: RoundedRectangleBorder(
                     side: BorderSide(

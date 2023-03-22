@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:bookstore/two.dart';
 import 'package:flutter/material.dart';
 
 class SignupPage extends StatelessWidget {
@@ -70,8 +71,10 @@ class SignupPage extends StatelessWidget {
                     child:  MaterialButton(
                     minWidth: double.infinity,
                     height: 60,
-                    onPressed: () {},
-                    color: Color.fromARGB(255, 221, 255, 71),
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>SecondPage()));                  
+                    },
+                    color: Color.fromARGB(255, 93, 155, 255),
                     elevation: 10,
                     shape: RoundedRectangleBorder(
                       side: BorderSide(

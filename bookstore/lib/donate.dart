@@ -22,11 +22,14 @@ class Donate extends StatelessWidget {
           ),
         ),
       ),
+      
       body: Container(
+        
         height: MediaQuery.of(context).size.height,
         width: double.infinity,
         child: Column(
-          //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             SizedBox(
               height: 80,

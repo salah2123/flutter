@@ -70,6 +70,18 @@ flutter:
       - assets/images/books.png
       - assets/images/food.jpg
       - assets/images/adds.png
+
+      - assets/images/foods/one.webp
+      - assets/images/foods/two.jpg
+      - assets/images/foods/three.jpg
+      - assets/images/foods/four.jpg
+      - assets/images/foods/five.jpg
+      - assets/images/foods/six.jpg
+      - assets/images/foods/seven.jpg
+      - assets/images/foods/eight.webp
+      - assets/images/foods/nine.jpg
+      - assets/images/foods/ten.jpg
+
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

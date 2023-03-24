@@ -1,5 +1,6 @@
 import 'package:bookstore/donate.dart';
 import 'package:bookstore/login.dart';
+import 'package:bookstore/recieve.dart';
 import 'package:bookstore/signup.dart';
 import 'package:bookstore/two.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +10,7 @@ void main(){
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Homepage(),
+      home: recieve(),
     )
   );
 }
@@ -36,7 +37,7 @@ class Homepage extends StatelessWidget {
                   fontSize: 30
                 ),),
                 SizedBox(height:20 ,),
-                Text("kochu kochu happiness ",
+                Text("sharing is caring ",
                 textAlign: TextAlign.center,
                 style: TextStyle( 
                   color: Colors.grey,

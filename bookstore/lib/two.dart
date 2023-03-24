@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:bookstore/donate.dart';
+import 'package:bookstore/recieve.dart';
 import 'package:flutter/material.dart';
 
 class SecondPage extends StatelessWidget {
@@ -67,7 +68,7 @@ class SecondPage extends StatelessWidget {
                       height: 60,
                       color: Color.fromARGB(255, 5, 101, 255),
                       onPressed: () {
-                        //Navigator.push(context, MaterialPageRoute(builder:(context)=>LoginPage()));
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>recieve()));
                       },
                       shape: RoundedRectangleBorder(
                         side: BorderSide(color: Colors.black),

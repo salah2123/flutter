@@ -79,7 +79,20 @@ class itemcard extends StatelessWidget {
           height: 180,
           width: 160,
           decoration: BoxDecoration(
+                boxShadow: [BoxShadow(
+                    color: Colors.blueAccent.withAlpha(60),
+                    blurRadius: 5,
+                    spreadRadius: 5,
+                    offset: Offset(
+                      0.0,
+                      3.0
+                    ),
+                  ),]
+                  ,
+            border: Border.all(color: Color.fromARGB(255, 247, 247, 248),
+            width: 3),
             image: DecorationImage(
+              
                 image: AssetImage(product.image), fit: BoxFit.fill),
             borderRadius: BorderRadius.circular(10),
           ),

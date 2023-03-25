@@ -29,10 +29,10 @@ class Donate extends StatelessWidget {
         width: double.infinity,
         child: Column(
           
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+         // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             SizedBox(
-              height: 80,
+              height: 40,
             ),
             ElevatedButton.icon(
               onPressed: () {},
@@ -84,9 +84,32 @@ class Donate extends StatelessWidget {
                   
               ),
             ),
+            ),
+            Container(
+              height: 300,
+              width: 300,
+               decoration: BoxDecoration(
+                    boxShadow: [BoxShadow(
+                    color: Colors.blueAccent.withAlpha(60),
+                    blurRadius: 10,
+                    spreadRadius: 10,
+                    offset: Offset(
+                      0.0,
+                      3.0
+                    ),
+                  ),]
+                  ,
+            border: Border.all(color: Color.fromARGB(255, 124, 165, 255),
+            width: 2),
+            image: DecorationImage(
+                image: AssetImage("assets/images/fooddonation.jpg"), fit: BoxFit.fill),
+            borderRadius: BorderRadius.circular(10),
+          ),
             )
           ],
+          
         ),
+        
       ),
     );
   }

@@ -70,6 +70,9 @@ flutter:
       - assets/images/books.png
       - assets/images/food.jpg
       - assets/images/adds.png
+      - assets/images/fooddonation.jpg
+      - assets/images/boo.png
+
 
       - assets/images/foods/one.webp
       - assets/images/foods/two.jpg

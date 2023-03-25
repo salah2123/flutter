@@ -2,6 +2,7 @@ import 'package:bookstore/donate.dart';
 import 'package:bookstore/login.dart';
 import 'package:bookstore/recieve.dart';
 import 'package:bookstore/signup.dart';
+import 'package:bookstore/splash.dart';
 import 'package:bookstore/two.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,7 @@ void main(){
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: recieve(),
+      home: SplashScreen(),
     )
   );
 }

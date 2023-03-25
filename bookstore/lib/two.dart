@@ -34,13 +34,28 @@ class SecondPage extends StatelessWidget {
           Column(
             children: [
               Container(
-                height: MediaQuery.of(context).size.height / 3,
+                height:300,
+                width: 300,
+                // MediaQuery.of(context).size.height / 3,
                 decoration: BoxDecoration(
+                 // border: Border.all(width: 1),
+                  boxShadow: [BoxShadow(
+                    color: Colors.blueAccent.withAlpha(60),
+                    blurRadius: 10,
+                    spreadRadius: 10,
+                    offset: Offset(
+                      0.0,
+                      3.0
+                    ),
+                  ),]
+                  ,
                     image: DecorationImage(
-                  image: AssetImage("assets/images/food.jpg"),
+                  image: AssetImage("assets/images/food.jpg")
+                  ,fit: BoxFit.fill
+                  
                 )),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 40),
               Column(
                 children: [
                   MaterialButton(
@@ -56,7 +71,10 @@ class SecondPage extends StatelessWidget {
                     ),
                     child: Text(
                       "Donate",
-                      style: TextStyle(fontWeight: FontWeight.w600),
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600),
                     ),
                   ),
                   SizedBox(
@@ -76,7 +94,10 @@ class SecondPage extends StatelessWidget {
                       ),
                       child: Text(
                         "Recieve",
-                        style: TextStyle(fontWeight: FontWeight.w600),
+                        style: TextStyle(
+                          fontSize: 30,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600),
                       ),
                     ),
                   ),
@@ -84,6 +105,7 @@ class SecondPage extends StatelessWidget {
                   Text('share food , share happiness',
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
+                    fontSize: 15,
                     fontFamily:"Alkatra",
                   ),),
                 ],

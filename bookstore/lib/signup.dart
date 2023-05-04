@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:bookstore/recieve.dart';
 import 'package:bookstore/two.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class SignupPage extends StatelessWidget {
@@ -73,6 +74,7 @@ class SignupPage extends StatelessWidget {
                     minWidth: double.infinity,
                     height: 60,
                     onPressed: () {
+                    //  FirebaseAuth.instance.createUserWithEmailAndPassword(email: _emailTextController.text, password: password)
                       Navigator.push(context, MaterialPageRoute(builder:(context)=>SecondPage()));                  
                     },
                     color: Color.fromARGB(255, 93, 155, 255),

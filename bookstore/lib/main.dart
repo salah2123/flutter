@@ -4,13 +4,16 @@ import 'package:bookstore/recieve.dart';
 import 'package:bookstore/signup.dart';
 import 'package:bookstore/splash.dart';
 import 'package:bookstore/two.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 
-void main(){
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(
     MaterialApp(
-      debugShowCheckedModeBanner: false,
+       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     )
   );

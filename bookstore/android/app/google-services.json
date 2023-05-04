@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "699787176775",
+    "project_id": "fooddonation2-4dc11",
+    "storage_bucket": "fooddonation2-4dc11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699787176775:android:92d2803be8c6d95a6b7a62",
+        "android_client_info": {
+          "package_name": "com.example.bookstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699787176775-o1lqkto08tu3q3pldqi390prk5mbqq0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgpqL3NRDyGjUFt5Bbhl2pV9RYaRez7i4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699787176775-o1lqkto08tu3q3pldqi390prk5mbqq0h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
